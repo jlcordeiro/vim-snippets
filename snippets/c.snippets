@@ -48,6 +48,15 @@ snippet once
 	${0}
 
 	#endif /* end of include guard: $1 */
+# extern
+snippet ext
+	#ifdef __cplusplus
+	extern "C" {
+	#endif
+snippet exte
+	#ifdef __cplusplus
+	}
+	#endif
 ##
 ## Control Statements
 # if
